@@ -7,7 +7,7 @@ import * as React from 'react'
 // et le prop opération qui contiendra la fonction de calcul
 // 🤖 utilise la destruction `Calcul({nb1, nb2, operation})`
 
-function Calcul({nb1, nb2, operation}) {
+function Calcul() {
   // 🐶 Calcule le résulat de l'opération sur 'nb1' et 'nb2'
   // 🤖 operation(nb1, nb2)
 
