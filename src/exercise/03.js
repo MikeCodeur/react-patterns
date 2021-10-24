@@ -1,6 +1,6 @@
 // Props Functions
 // http://localhost:3000/alone/exercise/02.js
-
+/* eslint-disable no-unused-vars */
 import * as React from 'react'
 import fetchAPIMock, {apiSubscribe, apiUnSubscribe} from '../data'
 
@@ -9,7 +9,7 @@ import fetchAPIMock, {apiSubscribe, apiUnSubscribe} from '../data'
 
 // 🐶 Ici un HOC 'withSubscription' avec 2 paramètres 'WrappedComponent' et 'selectData'
 function withSubscription(WrappedComponent, selectData) {
-  return function (props){
+  return function (props) {
     // 🐶 Implemente ici l'appel à la souscription d'API
     // 🤖  apiSubscribe()
 
@@ -28,16 +28,16 @@ function withSubscription(WrappedComponent, selectData) {
 // 🐶 Utilise TodoListWithSubscription et NotesWithSubscription dans le render de <App />
 const TodoListWithSubscription = withSubscription(
   TodoList,
-  (DataSource) => DataSource().todos
-);
+  DataSource => DataSource().todos,
+)
 
 const NotesWithSubscription = withSubscription(
   NotesList,
-  (DataSource) => DataSource().notes
-);
+  DataSource => DataSource().notes,
+)
 
 function TodoList() {
-  //⚠️ Dans la réalité il faudrait utiliser un state et useEffect. Ici fetchAPIMock() est ynchrone 
+  //⚠️ Dans la réalité il faudrait utiliser un state et useEffect. Ici fetchAPIMock() est ynchrone
   // pour simplifier la démonstration
   apiSubscribe()
   const todos = fetchAPIMock().todos

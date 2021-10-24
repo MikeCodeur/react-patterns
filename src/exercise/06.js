@@ -45,10 +45,10 @@ function App() {
 
   return (
     <div>
-        {/* 🐶 Passe les bons props (fonctions et données)  */}
-        <NameInput />
-        <FirstNameInput />
-        <div>Bonjour </div>
+      {/* 🐶 Passe les bons props (fonctions et données)  */}
+      <NameInput />
+      <FirstNameInput />
+      <div>Bonjour </div>
     </div>
   )
 }

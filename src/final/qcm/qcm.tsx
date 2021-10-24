@@ -3,13 +3,13 @@ import React from 'react'
 
 interface IQuestion {
   question: string
-  options:string[]
+  options: string[]
   answer: string
 }
 
 interface IQCMInterface {
   exerciseId: string
-  exerciseTitle : string
+  exerciseTitle: string
   quiz: IQuestion[]
 }
 
@@ -19,18 +19,24 @@ const QCM: Array<IQCMInterface> = [
     exerciseTitle: 'Composants Proxy',
     quiz: [
       {
-        question: "A quoi servent les composants proxy ?",
-        options: ["Améliorer la rapidité du code", "Faire des composants réutilisables"],
-        answer: "1"
-      },{
+        question: 'A quoi servent les composants proxy ?',
+        options: [
+          'Améliorer la rapidité du code',
+          'Faire des composants réutilisables',
+        ],
+        answer: '1',
+      },
+      {
         question: "Est-ce obligatoire d'utiliser des composants proxy ?",
-        options: ["Oui", "Non"],
-        answer: "1"
-      },{
-        question: "Utiliser des composants proxy pour éviter de dupliquer du code ...",
-        options: ["Est une bonne idée", "N'a pas d'impact"],
-        answer: "0"
-      }
+        options: ['Oui', 'Non'],
+        answer: '1',
+      },
+      {
+        question:
+          'Utiliser des composants proxy pour éviter de dupliquer du code ...',
+        options: ['Est une bonne idée', "N'a pas d'impact"],
+        answer: '0',
+      },
     ],
   },
   //export
@@ -39,18 +45,30 @@ const QCM: Array<IQCMInterface> = [
     exerciseTitle: 'Props Functions',
     quiz: [
       {
-        question: "Peut-on passer des fonctions dans des props ?",
-        options: ["Oui", "Non"],
-        answer: "0"
-      },{
+        question: 'Peut-on passer des fonctions dans des props ?',
+        options: ['Oui', 'Non'],
+        answer: '0',
+      },
+      {
         question: "Qu'elle est la bonne syntaxe ? ",
-        options: ["onClick=handeClick", "onClick={handeClick}", "onClick={handeClick()}", "onClick=(handeClick)"],
-        answer: "1"
-      },{
+        options: [
+          'onClick=handeClick',
+          'onClick={handeClick}',
+          'onClick={handeClick()}',
+          'onClick=(handeClick)',
+        ],
+        answer: '1',
+      },
+      {
         question: "Qu'elle est la bonne syntaxe avec paramètres ? ",
-        options: ["onClick=handeClick(5, 10)", "onClick={handeClick(5, 10)}", "onClick={handeClick(5, 10)}", "onClick={() => handeClick(5, 10)}"],
-        answer: "3"
-      }
+        options: [
+          'onClick=handeClick(5, 10)',
+          'onClick={handeClick(5, 10)}',
+          'onClick={handeClick(5, 10)}',
+          'onClick={() => handeClick(5, 10)}',
+        ],
+        answer: '3',
+      },
     ],
   },
   {
@@ -58,14 +76,16 @@ const QCM: Array<IQCMInterface> = [
     exerciseTitle: 'Hight Order Component',
     quiz: [
       {
-        question: "Les HOC modifient la structure du render ?",
-        options: ["Vrai", "Faux"],
-        answer: "1"
-      },{
-        question: "Les HOC doivent obligatoirement laisser passer les props au enfants ?",
-        options: ["Vrai", "Faux"],
-        answer: "0"
-      } 
+        question: 'Les HOC modifient la structure du render ?',
+        options: ['Vrai', 'Faux'],
+        answer: '1',
+      },
+      {
+        question:
+          'Les HOC doivent obligatoirement laisser passer les props au enfants ?',
+        options: ['Vrai', 'Faux'],
+        answer: '0',
+      },
     ],
   },
   {
@@ -73,20 +93,25 @@ const QCM: Array<IQCMInterface> = [
     exerciseTitle: 'Props drilling',
     quiz: [
       {
-        question: "Le props drilling consiste à",
-        options: ["Faire redessendre des props", "Faire remonter des props"],
-        answer: "0"
-      }
+        question: 'Le props drilling consiste à',
+        options: ['Faire redessendre des props', 'Faire remonter des props'],
+        answer: '0',
+      },
     ],
-  },{
+  },
+  {
     exerciseId: 'src/exercise/05.md',
     exerciseTitle: 'State hoisting',
     quiz: [
       {
-        question: "Le state hoisting consiste à",
-        options: ["Remonter les props dans le composant parent", "Remonter les states dans le composant parent","Descendre les states dans le composant enfant"],
-        answer: "1"
-      }
+        question: 'Le state hoisting consiste à',
+        options: [
+          'Remonter les props dans le composant parent',
+          'Remonter les states dans le composant parent',
+          'Descendre les states dans le composant enfant',
+        ],
+        answer: '1',
+      },
     ],
   },
   {
@@ -94,10 +119,14 @@ const QCM: Array<IQCMInterface> = [
     exerciseTitle: 'Lifting State Up',
     quiz: [
       {
-        question: "Le Lifting State Up consiste à",
-        options: ["Remonter les props dynamiquement dans le composant parent", "Remonter les states dynamiquement dans le composant parent","Descendre les states dynamiquement dans le composant enfant"],
-        answer: "1"
-      }
+        question: 'Le Lifting State Up consiste à',
+        options: [
+          'Remonter les props dynamiquement dans le composant parent',
+          'Remonter les states dynamiquement dans le composant parent',
+          'Descendre les states dynamiquement dans le composant enfant',
+        ],
+        answer: '1',
+      },
     ],
   },
 ]
@@ -105,6 +134,6 @@ const QCM: Array<IQCMInterface> = [
 //export default QCM;
 
 const QcmComponent = () => {
-  return (<>{ JSON.stringify(QCM, null, 2) }</>);
+  return <>{JSON.stringify(QCM, null, 2)}</>
 }
 export default QcmComponent

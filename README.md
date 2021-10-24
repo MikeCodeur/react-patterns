@@ -34,14 +34,8 @@
 
 ## Les prérequis 
 
-- Les bases de HTML CSS JS
-  ["Les bases de JavaScript"](https://www.youtube.com/watch?v=Tg1xZic-JQs&list=PLwWXkX8UsKlgkg0U_JH82p4bLSuAuTdof)
-- A lire
-  ["Les bases de JavaScript"](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
-- Installatioin de React DevTools
-  ([Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-  (recommended),
-  [Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/))
+- Les fondamentaux de React
+  [GitHub](https://github.com/MikeCodeur/react-fondamentaux)
 
 ## Configuration requise
 

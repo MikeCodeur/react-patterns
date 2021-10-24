@@ -2,7 +2,7 @@
 // http://localhost:3000/alone/final/02.js
 
 import * as React from 'react'
-import fetchAPIMock,{apiSubscribe,apiUnSubscribe} from '../data'
+import fetchAPIMock, {apiSubscribe, apiUnSubscribe} from '../data'
 
 function TodoList({data}) {
   return (
@@ -25,26 +25,24 @@ function NotesList({data}) {
 }
 
 function withSubscription(WrappedComponent, selectData) {
-
-  return function (props){
+  return function (props) {
     apiSubscribe()
     const data = selectData(fetchAPIMock)
     apiUnSubscribe()
 
-    return <WrappedComponent data={data} {...props}/>
+    return <WrappedComponent data={data} {...props} />
   }
 }
 
-
 const TodoListWithSubscription = withSubscription(
   TodoList,
-  (DataSource) => DataSource().todos
-);
+  DataSource => DataSource().todos,
+)
 
 const NotesWithSubscription = withSubscription(
   NotesList,
-  (DataSource) => DataSource().notes
-);
+  DataSource => DataSource().notes,
+)
 
 function App() {
   return (
