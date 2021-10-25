@@ -1,5 +1,5 @@
 // Props Functions
-// http://localhost:3000/alone/exercise/02.js
+// http://localhost:3000/alone/exercise/03.js
 /* eslint-disable no-unused-vars */
 import * as React from 'react'
 import fetchAPIMock, {apiSubscribe, apiUnSubscribe} from '../data'
@@ -14,7 +14,7 @@ function withSubscription(WrappedComponent, selectData) {
     // 🤖  apiSubscribe()
 
     // 🐶 Implemente ici l'appel qui permettra de charger les données et les sotcker dans `data`
-    // utilise la dataSource fetchAPIMock et selectData
+    // utilise la 'dataSource' 'fetchAPIMock' et 'selectData'
 
     // 🐶 Implemente ici l'appel à la désouscription  d'API
     // 🤖  apiUnSubscribe()
