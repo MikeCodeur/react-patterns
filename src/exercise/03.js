@@ -4,8 +4,8 @@
 import * as React from 'react'
 import fetchAPIMock, {apiSubscribe, apiUnSubscribe} from '../data'
 
-// 🐶 Yu vas devoir supprimer les appels  apiSubscribe() apiUnSubscribe() fetchAPIMock()
-// des composants TodoList et NotesList et les faire remonter dans le HOC
+// 🐶 Tu vas devoir supprimer les appels  'apiSubscribe()' 'apiUnSubscribe()' 'fetchAPIMock()'
+// des composants 'TodoList' et 'NotesList' et les faire remonter dans le HOC
 
 // 🐶 Ici un HOC 'withSubscription' avec 2 paramètres 'WrappedComponent' et 'selectData'
 function withSubscription(WrappedComponent, selectData) {
@@ -37,7 +37,7 @@ const NotesWithSubscription = withSubscription(
 )
 
 function TodoList() {
-  //⚠️ Dans la réalité il faudrait utiliser un state et useEffect. Ici fetchAPIMock() est ynchrone
+  //⚠️ Dans la réalité il faudrait utiliser un state et useEffect. Ici fetchAPIMock() est synchrone
   // pour simplifier la démonstration
   apiSubscribe()
   const todos = fetchAPIMock().todos
