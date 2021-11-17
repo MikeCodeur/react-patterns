@@ -13,11 +13,7 @@ function Calcul({nb1, nb2, operation}) {
   }
   return (
     <div>
-      <input
-        type="button"
-        onClick={handeClick}
-        value={`Calculer ${opName}`}
-      />
+      <input type="button" onClick={handeClick} value={`Calculer ${opName}`} />
       {resultat
         ? `L'opération ${opName} de ${nb1} et ${nb2} donne ${resultat}`
         : null}

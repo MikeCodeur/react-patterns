@@ -1,6 +1,6 @@
 // Props Drilling
 // http://localhost:3000/alone/exercise/04.js
-
+/* eslint-disable no-unused-vars */
 import * as React from 'react'
 
 // 🐶 Fais évoluer le Header en ajoutant en deux composants enfants <Login /> <MenuBarInfo />

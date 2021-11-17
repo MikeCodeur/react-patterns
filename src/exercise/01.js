@@ -8,7 +8,7 @@ import * as React from 'react'
 
 // 🐶 Remplace tous les `<button>👍</button>` par le proxy composant 'Button'
 
-function Header(){
+function Header() {
   return (
     <div>
       <h1>Welcome</h1>
@@ -16,7 +16,7 @@ function Header(){
     </div>
   )
 }
-function Content(){
+function Content() {
   return (
     <div>
       <h2>Articles</h2>
@@ -29,7 +29,7 @@ function Content(){
     </div>
   )
 }
-function Footer(){
+function Footer() {
   return (
     <div>
       <h3>Contact us</h3>

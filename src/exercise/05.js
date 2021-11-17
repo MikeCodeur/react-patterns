@@ -4,21 +4,22 @@
 import * as React from 'react'
 import {fetchTodoAPI} from '../data'
 
-// 🐶 Fais évoluer le Header en ajoutant en deux composants enfants <Login /> <MenuBarInfo />
-// Login retourne <div>Connexion au site : {siteName} </div>
-// MenuBarInfo : <div>Vous avez {nbMessages} messages</div>
-
-// 🐶 Tu vas devoir faire transiter les props depuis App -> Header -> Login/MenuBarInfo
-
+// 🐶 Créé un props 'todos'
 function Header() {
   //⚠️ Dans la réalité il faudrait utiliser useEffect.
   // Ici fetchTodoAPI() est synchrone et juste pour la démonstration.
+
+  // ⛏️ Supprime (deplace dans App) l'appel API et le State Todos 
+  // et utilise le props 'todos' à la place
   const todosFromAPI = fetchTodoAPI()
   const [todos] = React.useState(todosFromAPI)
   return <div>Vous avez {todos.length} tâches </div>
 }
 
+// 🐶 Créé un props 'todos'
 function TodoList() {
+   // ⛏️ Supprime (deplace dans App) l'appel API et le State Todos 
+  // et utilise le props 'todos' à la place
   const todosFromAPI = fetchTodoAPI()
   const [todos] = React.useState(todosFromAPI)
 
@@ -32,6 +33,10 @@ function TodoList() {
 }
 
 function App() {
+  // 🐶 Fais l'appel API pour récuperer les 'todos' et stocke le 
+  // dans une const 'todosFromAPI'
+  // 🐶 Créé un state 'todos' qui contient 'todosFromAPI' par defaut
+
   return (
     <>
       <Header />
