@@ -1,3 +1,4 @@
+"use client"
 // Props Functions
 // 🚀 Calculer sur un événement
 // http://localhost:3000/alone/final/01.bonus-1.js

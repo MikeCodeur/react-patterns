@@ -1,3 +1,4 @@
+"use client"
 // Props Functions
 // http://localhost:3000/alone/exercise/02.js
 

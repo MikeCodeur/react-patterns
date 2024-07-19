@@ -1,3 +1,4 @@
+"use client"
 // Props Functions
 // 🚀 Appel avec des paramètres
 // http://localhost:3000/alone/final/01.bonus-1.js

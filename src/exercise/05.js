@@ -1,3 +1,4 @@
+"use client"
 // State Hoisting
 // http://localhost:3000/alone/exercise/05.js
 
